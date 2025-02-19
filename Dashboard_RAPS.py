@@ -28,7 +28,7 @@ tiempo_respuesta = generar_datos_con_tendencia(30, 90, len(fechas), -20)
 
 # 1.2 Seizing (Aprovechamiento de oportunidades digitales)
 usuarios_activos = generar_datos_con_tendencia(800, 1500, len(fechas), 300)
-pedidos_procesados = generar_datos_con_tendencia(500, 1200, len(fechas), 400)
+_procesados = generar_datos_con_tendencia(500, 1200, len(fechas), 400)
 tiempo_procesamiento = generar_datos_con_tendencia(5, 20, len(fechas), -5)
 
 # 1.3 Configuring (Adaptación del modelo operativo a nuevas tecnologías)
@@ -44,7 +44,7 @@ data = pd.DataFrame({
     "Clientes_Migrados": clientes_migrados,
     "Tiempo_Respuesta": tiempo_respuesta,
     "Usuarios_Activos": usuarios_activos,
-    "Pedidos_Procesados": pedidos_procesados,
+    "_Procesados": _procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
     "Gasto_TI_OpEx": gasto_ti_opex,
     "Alianzas_Tecnologicas": alianzas_tecnologicas,
@@ -63,7 +63,7 @@ opcion = st.sidebar.selectbox(
         "Clientes Migrados al Modelo Digital",
         "Usuarios Activos en MyRAzept",
         "Evolución del Gasto en TI bajo Modelo OpEx",
-        "Pedidos Digitales Procesados",
+        " Digitales Procesados",
         "Tiempo de Respuesta a Cambios Regulatorios",
         "Número de Alianzas Tecnológicas"
     ]
@@ -91,8 +91,8 @@ elif opcion == "Usuarios Activos en MyRAzept":
 elif opcion == "Evolución del Gasto en TI bajo Modelo OpEx":
     graficar_metrica("Gasto_TI_OpEx", "red", "Porcentaje de Gasto OpEx")
 
-elif opcion == "Pedidos Digitales Procesados":
-    graficar_metrica("Pedidos_Procesados", "purple", "Cantidad de Pedidos")
+elif opcion == " Digitales Procesados":
+    graficar_metrica("Ha aumentado en el plazo de 9 meses el # de Pedidos Procesados?", "purple", "Cantidad de Pedidos")
 
 elif opcion == "Tiempo de Respuesta a Cambios Regulatorios":
     graficar_metrica("Tiempo_Respuesta", "orange", "Días de Respuesta")
