@@ -63,7 +63,7 @@ opcion = st.sidebar.selectbox(
         "Clientes Migrados al Modelo Digital",
         "Usuarios Activos en MyRAzept",
         "Evolución del Gasto en TI bajo Modelo OpEx",
-        " Digitales Procesados",
+        " Pedidos Digitales Procesados",
         "Tiempo de Respuesta a Cambios Regulatorios",
         "Número de Alianzas Tecnológicas"
     ]
@@ -91,8 +91,8 @@ elif opcion == "Usuarios Activos en MyRAzept":
 elif opcion == "Evolución del Gasto en TI bajo Modelo OpEx":
     graficar_metrica("Gasto_TI_OpEx", "red", "Porcentaje de Gasto OpEx")
 
-elif opcion == " Digitales Procesados":
-    graficar_metrica("Ha aumentado en el plazo de 9 meses el # de Pedidos Procesados?", "purple", "Cantidad de Pedidos")
+elif opcion == "Pedidos Digitales Procesados":
+    graficar_metrica("Pedidos_Procesados", "purple", "Cantidad de Pedidos")
 
 elif opcion == "Tiempo de Respuesta a Cambios Regulatorios":
     graficar_metrica("Tiempo_Respuesta", "orange", "Días de Respuesta")
