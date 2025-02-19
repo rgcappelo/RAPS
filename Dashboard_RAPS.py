@@ -44,7 +44,7 @@ data = pd.DataFrame({
     "Clientes_Migrados": clientes_migrados,
     "Tiempo_Respuesta": tiempo_respuesta,
     "Usuarios_Activos": usuarios_activos,
-    "_Procesados": _procesados,
+    "Pedidos_Procesados": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
     "Gasto_TI_OpEx": gasto_ti_opex,
     "Alianzas_Tecnologicas": alianzas_tecnologicas,
@@ -63,7 +63,7 @@ opcion = st.sidebar.selectbox(
         "Clientes Migrados al Modelo Digital",
         "Usuarios Activos en MyRAzept",
         "Evolución del Gasto en TI bajo Modelo OpEx",
-        " Pedidos Digitales Procesados",
+        "Pedidos Digitales Procesados",
         "Tiempo de Respuesta a Cambios Regulatorios",
         "Número de Alianzas Tecnológicas"
     ]
