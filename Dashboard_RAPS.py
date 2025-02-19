@@ -28,7 +28,7 @@ tiempo_respuesta = generar_datos_con_tendencia(30, 90, len(fechas), -20)
 
 # 1.2 Seizing (Aprovechamiento de oportunidades digitales)
 usuarios_activos = generar_datos_con_tendencia(800, 1500, len(fechas), 300)
-_procesados = generar_datos_con_tendencia(500, 1200, len(fechas), 400)
+pedidos_procesados = generar_datos_con_tendencia(500, 1200, len(fechas), 400)
 tiempo_procesamiento = generar_datos_con_tendencia(5, 20, len(fechas), -5)
 
 # 1.3 Configuring (Adaptación del modelo operativo a nuevas tecnologías)
