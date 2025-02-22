@@ -46,7 +46,7 @@ data = pd.DataFrame({
     "Usuarios_Activos": usuarios_activos,
     "Pedidos_Procesados": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
-    "Gasto_TI_OpEx": gasto_ti_opex,
+    "Gasto_TI_OpEx1": gasto_ti_opex,
     "Alianzas_Tecnologicas": alianzas_tecnologicas,
     "Tiempo_Inactividad": tiempo_inactividad
 })
@@ -89,7 +89,7 @@ elif opcion == "Usuarios Activos en MyRAzept":
     graficar_metrica("Usuarios_Activos", "green", "Usuarios Activos")
 
 elif opcion == "Evolución del Gasto en TI bajo Modelo OpEx":
-    graficar_metrica("Gasto_TI_OpEx", "red", "Porcentaje de Gasto OpEx")
+    graficar_metrica("Gasto_TI_OpEx1", "red", "Porcentaje de Gasto OpEx")
 
 elif opcion == "Pedidos Digitales Procesados":
     graficar_metrica("Pedidos_Procesados", "purple", "Cantidad de Pedidos")
