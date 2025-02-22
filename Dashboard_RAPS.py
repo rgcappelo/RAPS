@@ -41,7 +41,7 @@ data = pd.DataFrame({
     "Fecha": fechas,
     "Mes": meses,
     "Reportes_Tendencias": reportes_tendencias,
-    "Clientes_Migrados": clientes_migrados,
+    "Clientes_Migrados1": clientes_migrados,
     "Tiempo_Respuesta": tiempo_respuesta,
     "Usuarios_Activos": usuarios_activos,
     "Pedidos_Procesados": pedidos_procesados,
@@ -54,7 +54,7 @@ data = pd.DataFrame({
 # --- INTERFAZ EN STREAMLIT ---
 
 st.title("📊 Dashboard de Transformación Digital de RAPS")
-st.sidebar.header("Opciones de Visualización")
+st.sidebar.header("Opciones de Visualización de los KPIs")
 
 # Selección de métricas a visualizar
 opcion = st.sidebar.selectbox(
