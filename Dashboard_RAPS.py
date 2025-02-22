@@ -55,7 +55,9 @@ data = pd.DataFrame({
 # --- INTERFAZ EN STREAMLIT ---
 
 st.title("📊 Dashboard de Transformación Digital de RAPS")
-st.write("Texto de prueba <br> otro texto ")
+st.write("Texto de prueba 
+
+         otro texto ")
 st.sidebar.header("Opciones de Visualización de los KPIs")
 
 # Selección de métricas a visualizar
