@@ -41,7 +41,7 @@ data = pd.DataFrame({
     "Fecha": fechas,
     "Mes": meses,
     "Reportes_Tendencias": reportes_tendencias,
-    "Clientes_Migrados1": clientes_migrados,
+    "Clientes_Migrados": clientes_migrados1,
     "Tiempo_Respuesta": tiempo_respuesta,
     "Usuarios_Activos": usuarios_activos,
     "Pedidos_Procesados": pedidos_procesados,
