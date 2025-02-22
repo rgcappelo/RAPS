@@ -55,11 +55,24 @@ data = pd.DataFrame({
 # --- INTERFAZ EN STREAMLIT ---
 
 st.title("📊 Dashboard de Transformación Digital de RAPS")
-st.write("""
-Texto de prueba 
+texto = """
+**OKR de Transformación Digital en RAPS**
 
-         otro texto 
-         """)
+✅ **Objetivo:** Acelerar la adopción de servicios digitales en el comercio de carnicería.
+
+**KR1:** Lograr 3,000 usuarios registrados en myRAzept en los próximos 12 meses.  
+**KR2:** Aumentar en un 40% el volumen de pedidos procesados digitalmente.  
+**KR3:** Reducir en un 30% el tiempo dedicado a la gestión manual de etiquetado y pedidos.
+
+**KPIs Clave**  
+- Usuarios activos en la plataforma.  
+- Tasa de conversión de clientes tradicionales a digitales.  
+- Tiempo promedio de gestión de recetas y pedidos.  
+- Número de pedidos procesados a través de la app.  
+- Feedback de clientes sobre la experiencia digital.
+"""
+st.markdown(texto)
+
 st.sidebar.header("Opciones de Visualización de los KPIs")
 
 # Selección de métricas a visualizar
