@@ -42,7 +42,7 @@ data = pd.DataFrame({
     "Fecha": fechas,
     "Mes": meses,
     "Reportes_Tendencias": reportes_tendencias,
-    "Clientes_Migrados": clientes_migrados,
+    "Clientes que han pasado del modelo tradicional al Digital": clientes_migrados,
     "Tiempo_Respuesta": tiempo_respuesta,
     "Usuarios_Activos": usuarios_activos,
     "Pedidos_Procesados": pedidos_procesados,
@@ -65,11 +65,13 @@ texto = """
 **KR3:** Reducir en un 30% el tiempo dedicado a la gestión manual de etiquetado y pedidos.
 
 **KPIs Clave**  
-- Usuarios activos en la plataforma.  
-- Tasa de conversión de clientes tradicionales a digitales.  
+- Tasa de conversión de clientes tradicionales a digitales.
+- Usuarios activos en la plataforma.
+- Evolución del gasto de TI (en la plataforma) bajo el modelo Opex
+- Número de pedidos procesados a través de la app.
 - Tiempo promedio de gestión de recetas y pedidos.  
-- Número de pedidos procesados a través de la app.  
-- Feedback de clientes sobre la experiencia digital.
+- TIempo de respuesta a cambios regultorios  
+- Número de alianzas tecnológicas.
 """
 st.markdown(texto)
 
@@ -102,7 +104,7 @@ def graficar_metrica(metrica, color, ylabel):
 
 # Mostrar la métrica seleccionada
 if opcion == "Clientes Migrados al Modelo Digital":
-    graficar_metrica("Clientes_Migrados", "blue", "Número de Clientes")
+    graficar_metrica("Clientes que han pasado del modelo tradicional al Digital", "blue", "Número de Clientes")
 
 elif opcion == "Usuarios Activos en MyRAzept":
     graficar_metrica("Usuarios_Activos", "green", "Usuarios Activos")
