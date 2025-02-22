@@ -37,6 +37,7 @@ alianzas_tecnologicas = generar_datos_con_tendencia(1, 4, len(fechas), 1)
 tiempo_inactividad = generar_datos_con_tendencia(1, 5, len(fechas), -1)
 
 # Crear DataFrame con todos los datos
+#Aqui se puede cambiar los nombres de los titulos de los graficos, pero hay que cambiarlo mas abajo tambien
 data = pd.DataFrame({
     "Fecha": fechas,
     "Mes": meses,
@@ -54,6 +55,7 @@ data = pd.DataFrame({
 # --- INTERFAZ EN STREAMLIT ---
 
 st.title("📊 Dashboard de Transformación Digital de RAPS")
+st.write("Texto de prueba")
 st.sidebar.header("Opciones de Visualización de los KPIs")
 
 # Selección de métricas a visualizar
