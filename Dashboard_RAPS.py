@@ -102,9 +102,13 @@ def graficar_metrica(metrica, color, ylabel):
     plt.xticks(rotation=45)
     st.pyplot(fig)
 
-# Mostrar la métrica seleccionada
+# Mostrar la métrica seleccionada y describir de qué se trata
 if opcion == "Clientes Migrados al Modelo Digital":
     graficar_metrica("Clientes que han pasado del modelo tradicional al Digital", "blue", "Número de Clientes")
+    textoCM = """
+    Objetivos Estratégico: Detectar cambios en el comportamiento de compra y adopción digital de los clientes de RAPS.
+"""
+st.markdown(textoCM)
 
 elif opcion == "Usuarios Activos en MyRAzept":
     graficar_metrica("Usuarios_Activos", "green", "Usuarios Activos")
