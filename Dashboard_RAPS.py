@@ -48,7 +48,7 @@ data = pd.DataFrame({
     "Cómo se están procesando los pedidos en entornos digitales": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
     "Evolución en la gestión del Gasto de TI": gasto_ti_opex,
-    "Con cuántas Alianzas Tecnologicas cuenta RAPS": alianzas_tecnologicas,
+    "Con cuántas Alianzas Tecnológicas cuenta RAPS": alianzas_tecnologicas,
     "Tiempo_Inactividad": tiempo_inactividad
 })
 
@@ -72,6 +72,7 @@ texto = """
 - Tiempo promedio de gestión de recetas y pedidos.  
 - TIempo de respuesta a cambios regulatorios  
 - Número de alianzas tecnológicas.
+
 """
 st.markdown(texto)
 
@@ -105,25 +106,44 @@ def graficar_metrica(metrica, color, ylabel):
 # Mostrar la métrica seleccionada y describir de qué se trata
 if opcion == "Clientes Migrados al Modelo Digital":
     textoCM = """
-    Objetivo Estratégico: Detectar cambios en el comportamiento de compra y adopción digital de los clientes de RAPS.
+    Objetivo Estratégico (Sensing): Detectar cambios en el comportamiento de compra y adopción digital de los clientes de RAPS.
     """
     st.markdown(textoCM)
     graficar_metrica("Clientes que han pasado del modelo tradicional al Digital", "blue", "Número de Clientes")
     
-
 elif opcion == "Usuarios Activos en MyRAzept":
+    textoUA = """
+    Objetivo Estratégico (Siezing): Aumentar la adopción de MyRAzept en un 50% en los próximos 12 meses.
+    """
+    st.markdown(textoUA)
     graficar_metrica("Usuarios que activamente usan MyRAzept", "green", "Usuarios Activos")
 
 elif opcion == "Evolución del Gasto en TI bajo Modelo OpEx":
+    textoGTI = """
+    Objetivo Estratégico (Configuring): Transformar el modelo de inversión en TI hacia OpEx en 18 meses.
+    """
+    st.markdown(textoGTI)
     graficar_metrica("Evolución en la gestión del Gasto de TI", "red", "Porcentaje de Gasto OpEx")
 
 elif opcion == "Pedidos Digitales Procesados":
+    textoPD = """
+    Objetivo Estratégico (Siezing): Lanzar nuevos servicios digitales basados en IA en un año.
+    """
+    st.markdown(textoPD)
     graficar_metrica("Cómo se están procesando los pedidos en entornos digitales", "purple", "Cantidad de Pedidos")
 
 elif opcion == "Tiempo de Respuesta a Cambios Regulatorios":
+    textoTRCR = """
+    Objetivo Estratégico (Sensing): Monitorear la evolución de normativas de etiquetado y trazabilidad de alimentos.
+    """
+    st.markdown(textoTRCR)
     graficar_metrica("Tiempos de respuesta internos ante cambios regulatorios", "orange", "Días de Respuesta")
 
 elif opcion == "Número de Alianzas Tecnológicas":
+    textoNAT = """
+    Objetivo Estratégico (Configuring): Establecer un ecosistema de alianzas estratégicas con proveedores tecnológicos.
+    """
+    st.markdown(textoNAT)
     graficar_metrica("Con cuántas Alianzas Tecnologicas cuenta RAPS", "brown", "Número de Alianzas")
 
 # Mostrar DataFrame con los datos
