@@ -44,10 +44,10 @@ data = pd.DataFrame({
     "Reportes_Tendencias": reportes_tendencias,
     "Clientes que han pasado del modelo tradicional al Digital": clientes_migrados,
     "Tiempo_Respuesta": tiempo_respuesta,
-    "Usuarios_Activos": usuarios_activos,
-    "Pedidos_Procesados": pedidos_procesados,
+    "Usuarios que activamente usan MyRAzept": usuarios_activos,
+    "Cómo se están procesando los pedidos en entornos digitales": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
-    "Gasto_TI_OpEx1": gasto_ti_opex,
+    "Evolución en la gestión del Gasto de TI": gasto_ti_opex,
     "Alianzas_Tecnologicas": alianzas_tecnologicas,
     "Tiempo_Inactividad": tiempo_inactividad
 })
@@ -105,20 +105,20 @@ def graficar_metrica(metrica, color, ylabel):
 # Mostrar la métrica seleccionada y describir de qué se trata
 if opcion == "Clientes Migrados al Modelo Digital":
     textoCM = """
-    Objetivos Estratégico: Detectar cambios en el comportamiento de compra y adopción digital de los clientes de RAPS.
+    Objetivo Estratégico: Detectar cambios en el comportamiento de compra y adopción digital de los clientes de RAPS.
     """
     st.markdown(textoCM)
     graficar_metrica("Clientes que han pasado del modelo tradicional al Digital", "blue", "Número de Clientes")
     
 
 elif opcion == "Usuarios Activos en MyRAzept":
-    graficar_metrica("Usuarios_Activos", "green", "Usuarios Activos")
+    graficar_metrica("Usuarios que activamente usan MyRAzept", "green", "Usuarios Activos")
 
 elif opcion == "Evolución del Gasto en TI bajo Modelo OpEx":
-    graficar_metrica("Gasto_TI_OpEx1", "red", "Porcentaje de Gasto OpEx")
+    graficar_metrica("Evolución en la gestión del Gasto de TI", "red", "Porcentaje de Gasto OpEx")
 
 elif opcion == "Pedidos Digitales Procesados":
-    graficar_metrica("Pedidos_Procesados", "purple", "Cantidad de Pedidos")
+    graficar_metrica("Cómo se están procesando los pedidos en entornos digitales", "purple", "Cantidad de Pedidos")
 
 elif opcion == "Tiempo de Respuesta a Cambios Regulatorios":
     graficar_metrica("Tiempo_Respuesta", "orange", "Días de Respuesta")
