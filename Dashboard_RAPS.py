@@ -87,7 +87,7 @@ opcion = st.sidebar.selectbox(
         "Evolución del Gasto en TI bajo Modelo OpEx",
         "Pedidos Digitales Procesados",
         "Tiempo de Respuesta a Cambios Regulatorios",
-        "Número de Alianzas Tecnológicas"
+        "Número de Alianzas Tecnológicas",
     ]
 )
 
