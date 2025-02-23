@@ -43,12 +43,12 @@ data = pd.DataFrame({
     "Mes": meses,
     "Reportes_Tendencias": reportes_tendencias,
     "Clientes que han pasado del modelo tradicional al Digital": clientes_migrados,
-    "Tiempo_Respuesta": tiempo_respuesta,
+    "Tiempos de respuesta internos ante cambios regulatorios": tiempo_respuesta,
     "Usuarios que activamente usan MyRAzept": usuarios_activos,
     "Cómo se están procesando los pedidos en entornos digitales": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
     "Evolución en la gestión del Gasto de TI": gasto_ti_opex,
-    "Alianzas_Tecnologicas": alianzas_tecnologicas,
+    "Con cuántas Alianzas Tecnologicas cuenta RAPS": alianzas_tecnologicas,
     "Tiempo_Inactividad": tiempo_inactividad
 })
 
@@ -70,7 +70,7 @@ texto = """
 - Evolución del gasto de TI (en la plataforma) bajo el modelo Opex
 - Número de pedidos procesados a través de la app.
 - Tiempo promedio de gestión de recetas y pedidos.  
-- TIempo de respuesta a cambios regultorios  
+- TIempo de respuesta a cambios regulatorios  
 - Número de alianzas tecnológicas.
 """
 st.markdown(texto)
@@ -121,10 +121,10 @@ elif opcion == "Pedidos Digitales Procesados":
     graficar_metrica("Cómo se están procesando los pedidos en entornos digitales", "purple", "Cantidad de Pedidos")
 
 elif opcion == "Tiempo de Respuesta a Cambios Regulatorios":
-    graficar_metrica("Tiempo_Respuesta", "orange", "Días de Respuesta")
+    graficar_metrica("Tiempos de respuesta internos ante cambios regulatorios", "orange", "Días de Respuesta")
 
 elif opcion == "Número de Alianzas Tecnológicas":
-    graficar_metrica("Alianzas_Tecnologicas", "brown", "Número de Alianzas")
+    graficar_metrica("Con cuántas Alianzas Tecnologicas cuenta RAPS", "brown", "Número de Alianzas")
 
 # Mostrar DataFrame con los datos
 st.write("📌 Datos Simulados:")
