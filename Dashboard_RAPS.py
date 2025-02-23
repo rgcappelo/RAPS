@@ -48,7 +48,7 @@ data = pd.DataFrame({
     "Cómo se están procesando los pedidos en entornos digitales": pedidos_procesados,
     "Tiempo_Procesamiento": tiempo_procesamiento,
     "Evolución en la gestión del Gasto de TI": gasto_ti_opex,
-    "Con cuántas Alianzas Tecnológicas cuenta RAPS": alianzas_tecnologicas,
+    "Con cuántas Alianzas Tecnólogicas cuenta RAPS?": alianzas_tecnologicas,
     "Tiempo_Inactividad": tiempo_inactividad
 })
 
@@ -144,7 +144,7 @@ elif opcion == "Número de Alianzas Tecnológicas":
     Objetivo Estratégico (Configuring): Establecer un ecosistema de alianzas estratégicas con proveedores tecnológicos.
     """
     st.markdown(textoNAT)
-    graficar_metrica("Con cuántas Alianzas Tecnólogicas cuenta RAPS", "brown", "Número de Alianzas")
+    graficar_metrica("Con cuántas Alianzas Tecnólogicas cuenta RAPS?", "brown", "Número de Alianzas")
 
 # Mostrar DataFrame con los datos
 st.write("📌 Datos Simulados:")
