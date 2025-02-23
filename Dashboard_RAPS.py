@@ -144,7 +144,7 @@ elif opcion == "Número de Alianzas Tecnológicas":
     Objetivo Estratégico (Configuring): Establecer un ecosistema de alianzas estratégicas con proveedores tecnológicos.
     """
     st.markdown(textoNAT)
-    graficar_metrica("Con cuántas Alianzas Tecnologicas cuenta RAPS", "brown", "Número de Alianzas")
+    graficar_metrica("Con cuántas Alianzas Tecnólogicas cuenta RAPS", "brown", "Número de Alianzas")
 
 # Mostrar DataFrame con los datos
 st.write("📌 Datos Simulados:")
